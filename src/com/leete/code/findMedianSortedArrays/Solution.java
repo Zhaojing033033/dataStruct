@@ -1,9 +1,7 @@
 package com.leete.code.findMedianSortedArrays;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
+ * 4
  * 给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。
 
  请你找出这两个有序数组的中位数，并且要求算法的时间复杂度为 O(log(m + n))。
@@ -29,6 +27,14 @@ import java.util.List;
  * 体会：1：判断积偶数；2：迭代存储
  *
  * 优化：每次只排除了一个，可以考虑一次排除 length/2
+ */
+
+/**
+ * 思路:双指针。
+ * 1通过两个数组的总长度计算，指针移动的次数
+ * 2判断两个指针当前的数，判断应该移动哪个
+ * 3迭代存储，存储最新的两个数据
+ * 3判断积偶，作处理
  */
 public class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
