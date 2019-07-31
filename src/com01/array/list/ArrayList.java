@@ -1,4 +1,4 @@
-package com.array.c1;
+package com01.array.list;
 
 import java.util.Arrays;
 
@@ -17,11 +17,22 @@ public class ArrayList<T> {
     }
 
     public void add(T item){
+        add(size++,item);
+    }
 
+    public void add(int index,T item){
         if(size+1 == data.length)
             reSize(data.length*2);
+        data[index]=item;
+        size++;
+    }
 
-        data[size++]=item;
+    public void addFirst(T e){
+        add(0,e);
+    }
+
+    public void addLast(T e){
+        add(size,e);
     }
 
     public int size(){
@@ -75,6 +86,21 @@ public class ArrayList<T> {
         int capacity = data.length;
         System.out.println("reCapacity "+capacity+" ->"+newSize );
         data=Arrays.copyOf(data, newSize);
+    }
+
+    @Override
+    public String toString(){
+
+        StringBuilder res = new StringBuilder();
+        res.append(String.format("Array: size = %d , capacity = %d\n", size, data.length));
+        res.append('[');
+        for(int i = 0 ; i < size ; i ++){
+            res.append(data[i]);
+            if(i != size - 1)
+                res.append(", ");
+        }
+        res.append(']');
+        return res.toString();
     }
 
 }
