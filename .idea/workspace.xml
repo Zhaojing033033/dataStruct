@@ -639,7 +639,7 @@
       <workItem from="1564132962996" duration="554000" />
       <workItem from="1564378680541" duration="7178000" />
       <workItem from="1564452829426" duration="16551000" />
-      <workItem from="1564531529933" duration="817000" />
+      <workItem from="1564531529933" duration="890000" />
     </task>
     <task id="LOCAL-00001" summary="leetcode  2两数相加（链表） &#10;3最长无重复子串的长度 4两序数组中位数">
       <created>1564473873351</created>
@@ -652,7 +652,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30012000" />
+    <option name="totallyTimeSpent" value="30085000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
