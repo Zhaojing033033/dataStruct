@@ -1,4 +1,4 @@
-package com.leete.code.lengthOfLongestSubstring;
+package com.leete.code.p0003;
 
 import java.util.HashMap;
 import java.util.HashSet;

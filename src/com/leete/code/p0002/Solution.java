@@ -1,4 +1,4 @@
-package com.leete.code.sumOfTwoNumber;
+package com.leete.code.p0002;
 
 /**
  * 2.

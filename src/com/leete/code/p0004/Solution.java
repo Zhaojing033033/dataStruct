@@ -1,4 +1,4 @@
-package com.leete.code.findMedianSortedArrays;
+package com.leete.code.p0004;
 
 /**
  * 4
@@ -74,5 +74,8 @@ public class Solution {
         double medianSortedArrays = new Solution().findMedianSortedArrays(nums1, nums2);
         System.out.println(medianSortedArrays);
 
+
+
     }
+
 }

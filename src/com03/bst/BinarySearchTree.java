@@ -118,7 +118,7 @@ public class BinarySearchTree<E extends Comparable> {
         root =  remove(root,e);
     }
 
-    public Node remove(Node node,E e){
+    private Node remove(Node node,E e){
         if( node == null )
             return null;
 
