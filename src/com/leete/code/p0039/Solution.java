@@ -39,8 +39,8 @@ import java.util.*;
 public class Solution {
 
     public static void main(String[] args) {
-        int [] aa  =new int[]{8,7,4,3};
-        List<List<Integer>> lists = new Solution().combinationSum(aa, 11);
+        int [] aa  =new int[]{4,2,8};
+        List<List<Integer>> lists = new Solution().combinationSum(aa, 8);
         for (int i = 0; i < lists.size(); i++) {
             List<Integer> integers = lists.get(i);
             for (int j = 0; j < integers.size(); j++) {
@@ -70,12 +70,12 @@ public class Solution {
             if(sum == target){
                 copy.add(candidates[i]);
                 ouput.add(copy);
-                return;
+                continue;
             }else if(sum>target){
-                combinationSum(candidates,target,i+1,copy,ouput);
+                continue;
             }else {
                 copy.add(candidates[i]);
-                combinationSum(candidates,target,i+1,copy,ouput);
+                combinationSum(candidates,target,i,copy,ouput);
             }
 
         }
